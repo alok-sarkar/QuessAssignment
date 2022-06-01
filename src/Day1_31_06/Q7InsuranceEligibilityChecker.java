@@ -1,3 +1,5 @@
+package Day1_31_06;
+
 import java.util.Scanner;
 
 public class Q7InsuranceEligibilityChecker {

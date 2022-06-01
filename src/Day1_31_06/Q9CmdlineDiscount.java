@@ -1,3 +1,5 @@
+package Day1_31_06;
+
 public class Q9CmdlineDiscount {
     public static void main(String[] args) {
         if (args.length>1) {

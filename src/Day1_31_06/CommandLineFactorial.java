@@ -1,3 +1,5 @@
+package Day1_31_06;
+
 public class CommandLineFactorial {
     public static void main(String[] args) {
         for (String arg : args) {
