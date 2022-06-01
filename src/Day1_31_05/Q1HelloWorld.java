@@ -1,4 +1,4 @@
-package Day1_31_06;
+package Day1_31_05;
 
 public class Q1HelloWorld {
     public static void main(String[] args) {

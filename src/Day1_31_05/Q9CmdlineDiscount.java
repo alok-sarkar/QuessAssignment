@@ -1,4 +1,4 @@
-package Day1_31_06;
+package Day1_31_05;
 
 public class Q9CmdlineDiscount {
     public static void main(String[] args) {
