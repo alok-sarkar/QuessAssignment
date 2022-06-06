@@ -19,47 +19,28 @@ public class Q38_MagicSquare {
             refSum+=arr[0][i];
         }
 
-//        System.out.println(refSum);
         for (int i = 0; i < rowColumNo; i++) {
-            int rowSum=0;
+            int rowSum=0,columnSum=0;
             for (int j = 0; j < rowColumNo; j++) {
                 rowSum+=arr[i][j];
-            }
-            if(rowSum!=refSum){
-                //System.out.println("No in row-wise");
-                System.out.println("No");
-                return;
-            }
-        }
-        for (int i = 0; i < rowColumNo; i++) {
-            int columnSum=0;
-            for (int j = 0; j < rowColumNo; j++) {
                 columnSum+=arr[j][i];
             }
-            if(columnSum!=refSum){
-                //System.out.println("No in column-wise");
+            if(rowSum!=refSum || columnSum!=refSum){
                 System.out.println("No");
                 return;
             }
         }
-        int forwardDiagonalSum=0;
+
+        int forwardDiagonalSum=0,backwardDiagonalSum=0;
         for (int i = 0; i < rowColumNo; i++) {
             forwardDiagonalSum+=arr[i][i];
+            backwardDiagonalSum+=arr[rowColumNo-i-1][rowColumNo-i-1];
         }
-        if(forwardDiagonalSum!=refSum){
-//            System.out.println("No in forward Diagonal");
+        if(forwardDiagonalSum!=refSum || backwardDiagonalSum!=refSum){
             System.out.println("No");
             return;
         }
-        int backwardDiagonalSum=0;
-        for (int i = rowColumNo-1; i >=0 ; i--) {
-            backwardDiagonalSum+=arr[i][i];
-        }
-        if(backwardDiagonalSum!=refSum){
-            //System.out.println("No in backward Diagonal");
-            System.out.println("No");
-            return;
-        }
+
         System.out.println("Yes");
     }
 }
