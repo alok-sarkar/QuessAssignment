@@ -11,6 +11,9 @@ rating, which is a String representing the rating of the movie (i.e. PG-13, R, e
     private String rating;
     // your code goes here
     }
+    *
+*Req 1 :Write a constructor for the class Movie, which takes a String representing the title of the movie, a String representing the studio, and a String representing the rating as its arguments, and sets the respective class variables to these values
+*
 * */
 public class Q38_MovieMaker {
     public static void main(String[] args) {
