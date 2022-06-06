@@ -10,18 +10,18 @@ import java.util.Scanner;
 * Input: 143
 * Output: yes
 */
-public class Q37_OddSumEvenSum {
+public class Q37_ProbableTopperCalculator {
     public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
+        Scanner scan= new Scanner(System.in);
         System.out.print("Enter the registration number: ");
-        int regNo= sc.nextInt();
+        int regNo= scan.nextInt();
         int oddSum=0,evenSum=0;
         while (regNo>0){
-            int temp= regNo%10;
-            if(temp%2==0)
-                evenSum+=temp;
+            int digit= regNo%10;
+            if(digit%2==0)
+                evenSum+=digit;
             else
-                oddSum+=temp;
+                oddSum+=digit;
             regNo/=10;
         }
         if(oddSum==evenSum)
