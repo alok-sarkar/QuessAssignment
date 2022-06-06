@@ -10,5 +10,11 @@ public class Movie {
         this.studio = studio;
         this.rating = rating;
     }
+
+    public Movie(String title, String studio) {
+        this.title = title;
+        this.studio = studio;
+        rating="PG";
+    }
 }
 
