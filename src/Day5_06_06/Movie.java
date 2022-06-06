@@ -1,5 +1,7 @@
 package Day5_06_06;
 
+import java.util.ArrayList;
+
 public class Movie {
     private String title;
     private String studio;
@@ -15,6 +17,21 @@ public class Movie {
         this.title = title;
         this.studio = studio;
         rating="PG";
+    }
+    Movie[] getPg(Movie[] movies){
+        ArrayList<Movie> pgMovies= new ArrayList<>();
+
+        for (Movie movie : movies) {
+            if(movie.rating.compareTo("PG")==0)
+                pgMovies.add(movie);
+        }
+        Movie[] result= new Movie[pgMovies.size()];
+        int i=0;
+        for (Movie movie : pgMovies) {
+            result[i]=movie;
+            i++;
+        }
+        return result;
     }
 }
 
