@@ -20,7 +20,7 @@ rating, which is a String representing the rating of the movie (i.e. PG-13, R, e
 *
 * Req 4:Write a piece of code that creates an instance of the class Movie with the title “Casino Royale”, the studio “Eon Productions”, and the rating “PG-13”.
 * */
-public class Q38_MovieMaker {
+public class Q39_MovieMaker {
     public static void main(String[] args) {
         Movie movie =new Movie( "Casino Royale", "Eon Productions", "PG-13");
 
